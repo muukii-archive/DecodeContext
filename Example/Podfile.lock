@@ -1,0 +1,19 @@
+PODS:
+  - JSONBridge (0.1.0):
+    - SwiftyJSON
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - JSONBridge (from `../`)
+
+EXTERNAL SOURCES:
+  JSONBridge:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JSONBridge: 9cb3bf4f681817c31c832153c456e64d5b8baea7
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 35bc791bff4b9239d13d52e647988db96648d983
+
+COCOAPODS: 1.0.1

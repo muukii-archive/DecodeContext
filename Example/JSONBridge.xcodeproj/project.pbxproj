@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BCDCEF81D4FA8B900AABB33 /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BCDCEF71D4FA8B900AABB33 /* sample.json */; };
+		4BCDCEFA1D4FA99800AABB33 /* StructPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDCEF91D4FA99800AABB33 /* StructPhoto.swift */; };
+		4BCDCEFC1D4FA9AB00AABB33 /* StructUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDCEFB1D4FA9AB00AABB33 /* StructUser.swift */; };
+		4BCDCEFE1D4FAA5600AABB33 /* DecodeContexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDCEFD1D4FAA5600AABB33 /* DecodeContexts.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		F59898D611C5D7EF6FB95742 /* Pods_JSONBridge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39174125641069ED6C0DC094 /* Pods_JSONBridge_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -15,6 +19,10 @@
 		37107F255E7A59B3F9CFFC92 /* JSONBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JSONBridge.podspec; path = ../JSONBridge.podspec; sourceTree = "<group>"; };
 		39174125641069ED6C0DC094 /* Pods_JSONBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		415447DA5B732FDDFB6E5D86 /* Pods-JSONBridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONBridge_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONBridge_Tests/Pods-JSONBridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4BCDCEF71D4FA8B900AABB33 /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		4BCDCEF91D4FA99800AABB33 /* StructPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructPhoto.swift; sourceTree = "<group>"; };
+		4BCDCEFB1D4FA9AB00AABB33 /* StructUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructUser.swift; sourceTree = "<group>"; };
+		4BCDCEFD1D4FAA5600AABB33 /* DecodeContexts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeContexts.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* JSONBridge_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONBridge_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -66,6 +74,10 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				4BCDCEFD1D4FAA5600AABB33 /* DecodeContexts.swift */,
+				4BCDCEF91D4FA99800AABB33 /* StructPhoto.swift */,
+				4BCDCEFB1D4FA9AB00AABB33 /* StructUser.swift */,
+				4BCDCEF71D4FA8B900AABB33 /* sample.json */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -160,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCDCEF81D4FA8B900AABB33 /* sample.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BCDCEFA1D4FA99800AABB33 /* StructPhoto.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				4BCDCEFC1D4FA9AB00AABB33 /* StructUser.swift in Sources */,
+				4BCDCEFE1D4FAA5600AABB33 /* DecodeContexts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,7 @@
 import UIKit
 import XCTest
 import JSONBridge
+import SwiftyJSON
 
 class Tests: XCTestCase {
     
@@ -14,16 +15,27 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+    func testDecode() {
+        
+        let jsonDataPath = NSBundle(forClass: self.dynamicType).pathForResource("sample", ofType: "json")!
+        let jsonData = NSData(contentsOfFile: jsonDataPath)!
+        
+        let json = JSON(data: jsonData)
+        
+        do {
+            let photos = try json.arrayValue.map {
+                try Photo.decodeContext.decode($0)
+            }
+            print(photos)
+        } catch {
+            XCTAssert(false, "\(error)")
+        }
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measureBlock {
             // Put the code you want to measure the time of here.
         }
     }
-    
 }
