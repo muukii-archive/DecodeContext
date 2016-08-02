@@ -25,17 +25,16 @@ import SwiftyJSON
 public struct Decoder<D: DecodeContextProtocol> {
     
     public let source: JSON
-    public let key: String
     public let context: D
     
-    public init(_ context: D, _ json: JSON, _ key: String, file: String = #file, line: Int = #line, column: Int = #column, function: String = #function) {
+    public init(_ context: D, _ json: JSON, file: String = #file, line: Int = #line, column: Int = #column, function: String = #function) {
         
         self.context = context
         self.source = json
-        self.key = key
+        
         #if DEBUG
             debugInfo = {
-                "\nFile: \(file)\nFunction: \(function)\nLine: \(line)\nColumn: \(column)\n\nActualValue: \(json[key])\nKey: \(key)"
+                "\nFile: \(file)\nFunction: \(function)\nLine: \(line)\nColumn: \(column)\n\nActualValue: \(json)"
             }
         #else
             debugInfo = { "" }
@@ -44,12 +43,14 @@ public struct Decoder<D: DecodeContextProtocol> {
     
     public func get() throws -> D.DecodeType {
         
-        let json = source[key]
-        if let error = json.error {
+        if let error = source.error {
             throw error
         }
         
-        return try context.decode(json)
+        guard let result = try context.decode(source) else {
+            throw Error.Nil
+        }
+        return result                
     }
     
     private let debugInfo: () -> String

@@ -23,9 +23,7 @@ class Tests: XCTestCase {
         let json = JSON(data: jsonData)
         
         do {
-            let photos = try json.arrayValue.map {
-                try Photo.decodeContext.decode($0)
-            }
+            let photos = try CollectionDecoder(StructPhoto.decodeContext, json).get()
             print(photos)
         } catch {
             XCTAssert(false, "\(error)")
@@ -35,6 +33,7 @@ class Tests: XCTestCase {
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
+            self.testDecode()
             // Put the code you want to measure the time of here.
         }
     }

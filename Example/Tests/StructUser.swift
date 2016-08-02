@@ -19,10 +19,10 @@ struct User {
     static let decodeContext = DecodeContext<User> { json in
         
         try User(
-            ID: Decoder(String.decodeContext, json, "id").get(),
-            username: Decoder(String.decodeContext, json, "username").get(),
-            name: Decoder(String.decodeContext, json, "name").get(),
-            profileImage: Decoder(ProfileImage.decodeContext, json, "profile_image").get())
+            ID: Decoder(String.decodeContext, json["id"]).get(),
+            username: Decoder(String.decodeContext, json["username"]).get(),
+            name: Decoder(String.decodeContext, json["name"]).get(),
+            profileImage: Decoder(ProfileImage.decodeContext, json["profile_image"]).get())
     }
 }
 
@@ -35,9 +35,9 @@ extension User {
         
         static let decodeContext = DecodeContext<ProfileImage> { json in
             try ProfileImage(
-                small: Decoder(String.decodeContext, json, "small").get(),
-                medium: Decoder(String.decodeContext, json, "medium").get(),
-                large: Decoder(String.decodeContext, json, "large").get()
+                small: Decoder(String.decodeContext, json["small"]).get(),
+                medium: Decoder(String.decodeContext, json["medium"]).get(),
+                large: Decoder(String.decodeContext, json["large"]).get()
             )
         }
     }

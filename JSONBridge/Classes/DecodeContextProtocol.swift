@@ -25,5 +25,5 @@ import SwiftyJSON
 public protocol DecodeContextProtocol {
     associatedtype DecodeType
     
-    func decode(json: JSON) throws -> DecodeType
+    func decode(json: JSON) throws -> DecodeType?
 }
