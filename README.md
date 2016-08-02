@@ -1,23 +1,37 @@
-# JSONBridge
+# DecodeContext
 
-[![CI Status](http://img.shields.io/travis/muukii/JSONBridge.svg?style=flat)](https://travis-ci.org/muukii/JSONBridge)
-[![Version](https://img.shields.io/cocoapods/v/JSONBridge.svg?style=flat)](http://cocoapods.org/pods/JSONBridge)
-[![License](https://img.shields.io/cocoapods/l/JSONBridge.svg?style=flat)](http://cocoapods.org/pods/JSONBridge)
-[![Platform](https://img.shields.io/cocoapods/p/JSONBridge.svg?style=flat)](http://cocoapods.org/pods/JSONBridge)
+[![CI Status](http://img.shields.io/travis/muukii/DecodeContext.svg?style=flat)](https://travis-ci.org/muukii/DecodeContext)
+[![Version](https://img.shields.io/cocoapods/v/DecodeContext.svg?style=flat)](http://cocoapods.org/pods/DecodeContext)
+[![License](https://img.shields.io/cocoapods/l/DecodeContext.svg?style=flat)](http://cocoapods.org/pods/DecodeContext)
+[![Platform](https://img.shields.io/cocoapods/p/DecodeContext.svg?style=flat)](http://cocoapods.org/pods/DecodeContext)
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+** Define Context **
+
+```Swift
+extension String {
+    static let decodeContext = DecodeContext<SwiftyJSON.JSON, String> { json in
+        return json.string
+    }
+}
+```
+
+**Decode**
+
+```Swift
+let id = try Decoder(String.decodeContext, json["id"]).get()
+```
 
 ## Requirements
 
 ## Installation
 
-JSONBridge is available through [CocoaPods](http://cocoapods.org). To install
+DecodeContext is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "JSONBridge"
+pod "DecodeContext"
 ```
 
 ## Author
@@ -26,4 +40,4 @@ muukii, m@muukii.me
 
 ## License
 
-JSONBridge is available under the MIT license. See the LICENSE file for more info.
+DecodeContext is available under the MIT license. See the LICENSE file for more info.
