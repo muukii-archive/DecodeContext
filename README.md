@@ -7,7 +7,7 @@
 
 ## Example
 
-** Define Context **
+**Define Context**
 
 ```Swift
 extension String {
@@ -22,6 +22,8 @@ extension String {
 ```Swift
 let id = try Decoder(String.decodeContext, json["id"]).get()
 ```
+
+![](shot1.png)
 
 ## Requirements
 
