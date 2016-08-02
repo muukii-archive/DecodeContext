@@ -7,17 +7,17 @@
 //
 
 import Foundation
-import JSONBridge
+import DecodeContext
 import SwiftyJSON
 
 extension Int {
-    static let decodeContext = DecodeContext<Int> { json in
+    static let decodeContext = DecodeContext<JSON, Int> { json in
         return json.int
     }
 }
 
 extension String {
-    static let decodeContext = DecodeContext<String> { json in
+    static let decodeContext = DecodeContext<JSON, String> { json in
         return json.string
     }
 }

@@ -20,17 +20,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import SwiftyJSON
-
-public struct Decoder<D: DecodeContextProtocol> {
+public struct Decoder<S, D: DecodeContextProtocol where S == D.SourceType> {
     
-    public let source: JSON
+    public let source: S
     public let context: D
     
-    public init(_ context: D, _ json: JSON, file: String = #file, line: Int = #line, column: Int = #column, function: String = #function) {
+    public init(_ context: D, _ source: S, file: String = #file, line: Int = #line, column: Int = #column, function: String = #function) {
         
         self.context = context
-        self.source = json
+        self.source = source
         
         #if DEBUG
             debugInfo = {
@@ -42,11 +40,7 @@ public struct Decoder<D: DecodeContextProtocol> {
     }
     
     public func get() throws -> D.DecodeType {
-        
-        if let error = source.error {
-            throw error
-        }
-        
+                
         guard let result = try context.decode(source) else {
             throw Error.Nil
         }

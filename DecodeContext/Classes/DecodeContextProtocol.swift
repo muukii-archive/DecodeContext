@@ -1,4 +1,4 @@
-// CollectionDecoder.swift
+// DecodeContextProtocol.swift
 //
 // Copyright (c) 2016 muukii
 //
@@ -20,39 +20,9 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import SwiftyJSON
-
-public struct CollectionDecoder<D: DecodeContextProtocol> {
+public protocol DecodeContextProtocol {
+    associatedtype DecodeType
+    associatedtype SourceType
     
-    public let source: JSON
-    public let context: D
-    
-    public init(_ context: D, _ json: JSON, file: String = #file, line: Int = #line, column: Int = #column, function: String = #function) {
-        
-        self.context = context
-        self.source = json
-        #if DEBUG
-            debugInfo = {
-                "\nFile: \(file)\nFunction: \(function)\nLine: \(line)\nColumn: \(column)"
-            }
-        #else
-            debugInfo = { "" }
-        #endif
-    }
-    
-    public func get() throws -> [D.DecodeType] {
-        
-        if let error = source.error {
-            throw error
-        }
-     
-        return try source.arrayValue.map { json -> D.DecodeType in
-            guard let result = try context.decode(json) else {
-                throw Error.Nil
-            }
-            return result
-        }
-    }
-    
-    private let debugInfo: () -> String
+    func decode(json: SourceType) throws -> DecodeType?
 }

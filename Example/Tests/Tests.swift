@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import JSONBridge
+import DecodeContext
 import SwiftyJSON
 
 class Tests: XCTestCase {
@@ -15,7 +15,7 @@ class Tests: XCTestCase {
         super.tearDown()
     }
     
-    func testDecode() {
+    func testStructDecode() {
         
         let jsonDataPath = NSBundle(forClass: self.dynamicType).pathForResource("sample", ofType: "json")!
         let jsonData = NSData(contentsOfFile: jsonDataPath)!
@@ -23,17 +23,40 @@ class Tests: XCTestCase {
         let json = JSON(data: jsonData)
         
         do {
-            let photos = try CollectionDecoder(StructPhoto.decodeContext, json).get()
+            let photos = try CollectionDecoder(StructPhoto.decodeContext, json.arrayValue).get()
             print(photos)
         } catch {
             XCTAssert(false, "\(error)")
         }
     }
     
-    func testPerformanceExample() {
+    func testPerformanceStructDecode() {
         // This is an example of a performance test case.
         self.measureBlock {
-            self.testDecode()
+            self.testStructDecode()
+            // Put the code you want to measure the time of here.
+        }
+    }
+    
+    func testClassDecode() {
+        
+        let jsonDataPath = NSBundle(forClass: self.dynamicType).pathForResource("sample", ofType: "json")!
+        let jsonData = NSData(contentsOfFile: jsonDataPath)!
+        
+        let json = JSON(data: jsonData)
+        
+        do {
+            let photos = try CollectionDecoder(ClassPhoto.decodeContext, json.arrayValue).get()
+            print(photos)
+        } catch {
+            XCTAssert(false, "\(error)")
+        }
+    }
+    
+    func testPerformanceClassDecode() {
+        // This is an example of a performance test case.
+        self.measureBlock {
+            self.testClassDecode()
             // Put the code you want to measure the time of here.
         }
     }

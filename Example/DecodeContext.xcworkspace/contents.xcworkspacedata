@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/muukii/Develop/iOS/JSONBridge/Example/DecodeContext.xcodeproj">
+      location = "group:DecodeContext.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

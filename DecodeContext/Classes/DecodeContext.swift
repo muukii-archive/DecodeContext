@@ -1,4 +1,4 @@
-// DecodeContextProtocol.swift
+// DecodeContext.swift
 //
 // Copyright (c) 2016 muukii
 //
@@ -20,10 +20,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import SwiftyJSON
-
-public protocol DecodeContextProtocol {
-    associatedtype DecodeType
+public struct DecodeContext<S, T>: DecodeContextProtocol {
     
-    func decode(json: JSON) throws -> DecodeType?
+    public init(decode: S throws -> T?) {
+        self.decode = decode
+    }
+    
+    public func decode(source: S) throws -> T? {
+        return try decode(source)
+    }
+    
+    let decode: S throws -> T?
 }

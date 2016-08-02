@@ -7,16 +7,15 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'JSONBridge'
+  s.name             = 'DecodeContext'
   s.version          = '0.1.0'
   s.summary          = 'Swift <-> JSON (SwiftyJSON)'
-  s.homepage         = 'https://github.com/muukii/JSONBridge'
+  s.homepage         = 'https://github.com/muukii/DecodeContext'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'muukii' => 'm@muukii.me' }
-  s.source           = { :git => 'https://github.com/muukii/JSONBridge.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/muukii/DecodeContext.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/muukii0803'
   s.ios.deployment_target = '8.0'
-  s.tvos.deployment_target = '9.2'  
-  s.source_files = 'JSONBridge/Classes/**/*'
-  s.dependency 'SwiftyJSON'
+  s.tvos.deployment_target = '9.2'
+  s.source_files = 'DecodeContext/Classes/**/*'
 end

@@ -1,19 +1,19 @@
 PODS:
-  - JSONBridge (0.1.0):
-    - SwiftyJSON
+  - DecodeContext (0.1.0)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
-  - JSONBridge (from `../`)
+  - DecodeContext (from `../`)
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
-  JSONBridge:
+  DecodeContext:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JSONBridge: 9cb3bf4f681817c31c832153c456e64d5b8baea7
+  DecodeContext: 2f42cd69ceef4d9c2ef1cbd3b333d8487b65883d
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 35bc791bff4b9239d13d52e647988db96648d983
+PODFILE CHECKSUM: cc0c0b71bc5da71e8bbe4b8b38429915e7098848
 
 COCOAPODS: 1.0.1

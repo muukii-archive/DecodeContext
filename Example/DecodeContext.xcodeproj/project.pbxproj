@@ -11,11 +11,16 @@
 		4BCDCEFA1D4FA99800AABB33 /* StructPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDCEF91D4FA99800AABB33 /* StructPhoto.swift */; };
 		4BCDCEFC1D4FA9AB00AABB33 /* StructUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDCEFB1D4FA9AB00AABB33 /* StructUser.swift */; };
 		4BCDCEFE1D4FAA5600AABB33 /* DecodeContexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDCEFD1D4FAA5600AABB33 /* DecodeContexts.swift */; };
+		4BCDCF081D50331B00AABB33 /* ClassPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDCF071D50331B00AABB33 /* ClassPhoto.swift */; };
+		4BCDCF0A1D50333800AABB33 /* ClassUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDCF091D50333800AABB33 /* ClassUser.swift */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		F59898D611C5D7EF6FB95742 /* Pods_JSONBridge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39174125641069ED6C0DC094 /* Pods_JSONBridge_Tests.framework */; };
+		F72C4A53F9B458F640794743 /* Pods_DecodeContext_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD1737873E3F006B0C430642 /* Pods_DecodeContext_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2550E2954AB749C01EF4F640 /* Pods-DecodeContext_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodeContext_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DecodeContext_Tests/Pods-DecodeContext_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2C3C50A564C6D01968F270BF /* Pods-DecodeContext_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecodeContext_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DecodeContext_Tests/Pods-DecodeContext_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		37107F255E7A59B3F9CFFC92 /* JSONBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JSONBridge.podspec; path = ../JSONBridge.podspec; sourceTree = "<group>"; };
 		39174125641069ED6C0DC094 /* Pods_JSONBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSONBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		415447DA5B732FDDFB6E5D86 /* Pods-JSONBridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONBridge_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSONBridge_Tests/Pods-JSONBridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -23,11 +28,14 @@
 		4BCDCEF91D4FA99800AABB33 /* StructPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructPhoto.swift; sourceTree = "<group>"; };
 		4BCDCEFB1D4FA9AB00AABB33 /* StructUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructUser.swift; sourceTree = "<group>"; };
 		4BCDCEFD1D4FAA5600AABB33 /* DecodeContexts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodeContexts.swift; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* JSONBridge_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONBridge_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BCDCF071D50331B00AABB33 /* ClassPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassPhoto.swift; sourceTree = "<group>"; };
+		4BCDCF091D50333800AABB33 /* ClassUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassUser.swift; sourceTree = "<group>"; };
+		607FACE51AFB9204008FA782 /* DecodeContext_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecodeContext_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8615FB119BFE7A5D6953EAE5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A8189E97ED1F061065EB5F33 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BD1737873E3F006B0C430642 /* Pods_DecodeContext_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DecodeContext_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E34585719A061EACE1AC94DF /* Pods-JSONBridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSONBridge_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSONBridge_Tests/Pods-JSONBridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59898D611C5D7EF6FB95742 /* Pods_JSONBridge_Tests.framework in Frameworks */,
+				F72C4A53F9B458F640794743 /* Pods_DecodeContext_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				39174125641069ED6C0DC094 /* Pods_JSONBridge_Tests.framework */,
+				BD1737873E3F006B0C430642 /* Pods_DecodeContext_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -65,7 +75,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* JSONBridge_Tests.xctest */,
+				607FACE51AFB9204008FA782 /* DecodeContext_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +87,8 @@
 				4BCDCEFD1D4FAA5600AABB33 /* DecodeContexts.swift */,
 				4BCDCEF91D4FA99800AABB33 /* StructPhoto.swift */,
 				4BCDCEFB1D4FA9AB00AABB33 /* StructUser.swift */,
+				4BCDCF071D50331B00AABB33 /* ClassPhoto.swift */,
+				4BCDCF091D50333800AABB33 /* ClassUser.swift */,
 				4BCDCEF71D4FA8B900AABB33 /* sample.json */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -106,6 +118,8 @@
 			children = (
 				E34585719A061EACE1AC94DF /* Pods-JSONBridge_Tests.debug.xcconfig */,
 				415447DA5B732FDDFB6E5D86 /* Pods-JSONBridge_Tests.release.xcconfig */,
+				2C3C50A564C6D01968F270BF /* Pods-DecodeContext_Tests.debug.xcconfig */,
+				2550E2954AB749C01EF4F640 /* Pods-DecodeContext_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -113,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACE41AFB9204008FA782 /* JSONBridge_Tests */ = {
+		607FACE41AFB9204008FA782 /* DecodeContext_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JSONBridge_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DecodeContext_Tests" */;
 			buildPhases = (
 				B8FC19348785879725C35F22 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -128,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = JSONBridge_Tests;
+			name = DecodeContext_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* JSONBridge_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* DecodeContext_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -149,7 +163,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "JSONBridge" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DecodeContext" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -162,7 +176,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACE41AFB9204008FA782 /* JSONBridge_Tests */,
+				607FACE41AFB9204008FA782 /* DecodeContext_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,7 +205,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONBridge_Tests/Pods-JSONBridge_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DecodeContext_Tests/Pods-DecodeContext_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B8FC19348785879725C35F22 /* [CP] Check Pods Manifest.lock */ = {
@@ -221,7 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSONBridge_Tests/Pods-JSONBridge_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DecodeContext_Tests/Pods-DecodeContext_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -234,7 +248,9 @@
 				4BCDCEFA1D4FA99800AABB33 /* StructPhoto.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 				4BCDCEFC1D4FA9AB00AABB33 /* StructUser.swift in Sources */,
+				4BCDCF081D50331B00AABB33 /* ClassPhoto.swift in Sources */,
 				4BCDCEFE1D4FAA5600AABB33 /* DecodeContexts.swift in Sources */,
+				4BCDCF0A1D50333800AABB33 /* ClassUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +341,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E34585719A061EACE1AC94DF /* Pods-JSONBridge_Tests.debug.xcconfig */;
+			baseConfigurationReference = 2C3C50A564C6D01968F270BF /* Pods-DecodeContext_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -338,13 +354,13 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DecodeContext_Tests;
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 415447DA5B732FDDFB6E5D86 /* Pods-JSONBridge_Tests.release.xcconfig */;
+			baseConfigurationReference = 2550E2954AB749C01EF4F640 /* Pods-DecodeContext_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -353,14 +369,14 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DecodeContext_Tests;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "JSONBridge" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DecodeContext" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -369,7 +385,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "JSONBridge_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DecodeContext_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
