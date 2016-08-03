@@ -24,5 +24,5 @@ public protocol DecodeContextProtocol {
     associatedtype DecodeType
     associatedtype SourceType
     
-    func decode(json: SourceType) throws -> DecodeType?
+    func decode(source: SourceType) throws -> DecodeType?
 }
