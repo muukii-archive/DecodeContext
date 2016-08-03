@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DecodeContext'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Swift <- (Any Source ex:JSON)'
   s.homepage         = 'https://github.com/muukii/DecodeContext'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
