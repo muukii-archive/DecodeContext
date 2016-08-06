@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-public struct DecodeContext<S, T>: DecodeContextProtocol {
+public class DecodeContext<S, T>: DecodeContextProtocol {
     
     public init(decode: S throws -> T?) {
         self.decode = decode
