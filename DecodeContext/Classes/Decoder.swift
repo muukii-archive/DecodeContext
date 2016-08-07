@@ -41,10 +41,17 @@ public struct Decoder<S, D: DecodeContextProtocol where S == D.SourceType> {
     
     public func get() throws -> D.DecodeType {
                 
-        guard let result = try context.decode(source) else {
+        guard let result = try getOptional() else {
             throw Error.Nil
         }
         return result                
+    }
+    
+    // Experiment
+    public func getOptional() throws -> D.DecodeType? {
+        
+        try context.decode(source)
+        return result
     }
     
     private let debugInfo: () -> String
