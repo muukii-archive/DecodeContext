@@ -50,7 +50,7 @@ public struct Decoder<S, D: DecodeContextProtocol where S == D.SourceType> {
     // Experiment
     public func getOptional() throws -> D.DecodeType? {
         
-        try context.decode(source)
+        let result = try context.decode(source)
         return result
     }
     

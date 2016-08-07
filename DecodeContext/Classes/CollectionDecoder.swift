@@ -48,5 +48,13 @@ public struct CollectionDecoder<S, D: DecodeContextProtocol where S == D.SourceT
         }
     }
     
+    public func getOptional() throws -> [D.DecodeType?] {
+        
+        return try sources.map { source -> D.DecodeType? in
+            let result = try context.decode(source)
+            return result
+        }
+    }
+    
     private let debugInfo: () -> String
 }
