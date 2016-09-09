@@ -1,0 +1,6 @@
+framework module DecodeContext {
+  umbrella header "DecodeContext-umbrella.h"
+
+  export *
+  module * { export * }
+}

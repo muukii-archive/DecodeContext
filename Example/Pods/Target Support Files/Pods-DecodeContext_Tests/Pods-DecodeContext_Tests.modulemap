@@ -1,0 +1,6 @@
+framework module Pods_DecodeContext_Tests {
+  umbrella header "Pods-DecodeContext_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,19 @@
+PODS:
+  - DecodeContext (0.1.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - DecodeContext (from `../`)
+  - SwiftyJSON
+
+EXTERNAL SOURCES:
+  DecodeContext:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DecodeContext: 2f42cd69ceef4d9c2ef1cbd3b333d8487b65883d
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: cc0c0b71bc5da71e8bbe4b8b38429915e7098848
+
+COCOAPODS: 1.0.1
